@@ -20,9 +20,9 @@ export const HourlyTemperature = ({ data }: HourlyTemperatureProps) => {
       <CardHeader>
         <CardTitle>Today's Temperature</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="ps-0 ps-2">
         <div className="h-[200px] w-full">
-          <ResponsiveContainer width={"100%"} height="100%">
+          <ResponsiveContainer width={"100%"} height="100%" className="">
             <LineChart data={chartData}>
               {/* <Line type="monotone" dataKey="temp" stroke="#8884d8" /> */}
               <XAxis

@@ -50,13 +50,13 @@ const CitySearch = () => {
     <>
       <Button
         variant={"outline"}
-        className="relative w-full justify-between text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64"
+        className="relative w-fit justify-between text-sm text-muted-foreground sm:pr-12 sm:pr-22"
         onClick={() => setOpen(true)}
       >
 
         <div className="flex items-center min-w-0">
-          <Search className="h-4 w-4 mr-2 flex-shrink-0" />
-          <span className="truncate">Search cities...</span>
+          <Search className="h-4 w-4 sm:mr-2 flex-shrink-0" />
+          <span className="hidden sm:inline">Search cities...</span>
         </div>
 
         <p className="absolute right-2 hidden sm:block">
